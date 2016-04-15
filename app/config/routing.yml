@@ -1,3 +1,10 @@
-app:
-    resource: "@AppBundle/Controller/"
+model:
+    resource: "@ModelBundle/Controller/"
     type:     annotation
+    prefix:   /
+
+core:
+    resource: "@CoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Abstract classlass Timestampable
  *
- * @ORM|MappedSuperclass
+ * @ORM\MappedSuperclass
  * @package Blog\ModelBundle\Entity
  */
 abstract class Timestampable{

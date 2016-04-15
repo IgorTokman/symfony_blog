@@ -1,6 +1,6 @@
 <?php
 
-namespace ModelBundle;
+namespace Blog\ModelBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

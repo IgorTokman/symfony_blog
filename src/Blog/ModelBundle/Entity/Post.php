@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Post
  *
  * @ORM\Table(name="post")
- * @ORM\Entity(repositoryClass="ModelBundle\Repository\PostRepository")
+ * @ORM\Entity(repositoryClass="Blog\ModelBundle\Repository\PostRepository")
  */
 class Post extends Timestampable
 {

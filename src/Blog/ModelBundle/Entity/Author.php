@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Author
  *
  * @ORM\Table(name="author")
- * @ORM\Entity(repositoryClass="ModelBundle\Repository\AuthorRepository")
+ * @ORM\Entity(repositoryClass="Blog\ModelBundle\Repository\AuthorRepository")
  */
 class Author extends Timestampable
 {

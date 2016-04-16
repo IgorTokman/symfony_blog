@@ -1,5 +1,10 @@
 home:
   Home
 
+by: by
+read.more: Read more
+
 post:
-  plural: Post
+  plural: Posts
+  latests: Latest posts
+  on: Posted on

@@ -1,4 +1,9 @@
 home: Inicio
 
+by: por
+read.more: Leer mas
+
 post:
-  plureal: Post
+  plural: Posts
+  latests: Untio posts
+  on: Publicado

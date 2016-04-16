@@ -19,13 +19,6 @@ abstract class Timestampable{
     private $createdAt;
 
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="updatedAt", type="datetime")
-     */
-    private $updatedAt;
-
-    /**
      * Post constructor.
      *
      */
@@ -57,29 +50,5 @@ abstract class Timestampable{
     {
         return $this->createdAt;
     }
-
-    /**
-     * Set updatedAt
-     *
-     * @param $updatedAt
-     * @return Post
-     * @internal param \DateTime $createdAt
-     *
-     */
-    public function setUpdatedAt($updatedAt)
-    {
-        $this->updatedAt = $updatedAt;
-
-        return $this;
-    }
-
-    /**
-     * Get updatedAt
-     *
-     * @return \DateTime
-     */
-    public function getUpdatedAt()
-    {
-        return $this->updatedAt;
-    }
+    
 }

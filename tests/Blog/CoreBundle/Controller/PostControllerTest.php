@@ -31,10 +31,10 @@ class PostControllerTest extends WebTestCase
                         ->getManager()->getRepository('ModelBundle:Post')
                         ->findFirst();
 
-        $crawler = $client->request('GET', '/', $post->getSlug());
+        $crawler = $client->request('GET', '/' . $post->getSlug());
 
         $this->assertTrue($client->getResponse()->isSuccessful(),
-            "The response was not successful");
+            "The response was not successfulllllllllll");
 
         $this->assertEquals($post->getTitle(), $crawler->filter('h1')->text(), 'Invalid post title');
     }

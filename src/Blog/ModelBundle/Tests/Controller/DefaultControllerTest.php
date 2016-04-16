@@ -1,6 +1,6 @@
 <?php
 
-namespace ModelBundle\Tests\Controller;
+namespace Blog\ModelBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -10,7 +10,7 @@ class DefaultControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/');
+        $crawler = $client->request('GET', '/default');
 
         $this->assertContains('Hello World', $client->getResponse()->getContent());
     }

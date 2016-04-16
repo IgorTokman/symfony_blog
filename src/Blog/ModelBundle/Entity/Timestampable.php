@@ -4,7 +4,7 @@ namespace Blog\ModelBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 /**
- * Abstract classlass Timestampable
+ * Abstract class Timestampable
  *
  * @ORM\MappedSuperclass
  * @package Blog\ModelBundle\Entity
@@ -17,6 +17,13 @@ abstract class Timestampable{
      * @ORM\Column(name="createdAt", type="datetime")
      */
     private $createdAt;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="updatedAt", type="datetime")
+     */
+    private $updatedAt;
 
     /**
      * Post constructor.
@@ -49,5 +56,30 @@ abstract class Timestampable{
     public function getCreatedAt()
     {
         return $this->createdAt;
+    }
+
+    /**
+     * Set updatedAt
+     *
+     * @param $updatedAt
+     * @return Post
+     * @internal param \DateTime $createdAt
+     *
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
     }
 }

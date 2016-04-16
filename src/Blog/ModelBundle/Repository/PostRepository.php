@@ -24,6 +24,19 @@ class PostRepository extends \Doctrine\ORM\EntityRepository
     }
 
     /**
+     * Find first post
+     *
+     * @return Post
+     */
+    public function  findFirst(){
+        $qb = $this->getQueryBuilder()
+            ->orderBy('p.id', 'asc')
+            ->setMaxResults(1);
+
+        return $qb->getQuery()->getSingleResult();
+    }
+
+    /**
      * @return \Doctrine\ORM\QueryBuilder
      */
     private function getQueryBuilder(){

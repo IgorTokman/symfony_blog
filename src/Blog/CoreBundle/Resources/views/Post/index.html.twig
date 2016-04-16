@@ -1,1 +1,9 @@
-Hello World!
+{% extends "CoreBundle::layout.html.twig"%}
+
+{% block title %}
+    {{ 'post.plural' | trans }}
+{% endblock %}
+
+{% block section %}
+    <h1>Welcome to the Post:index page</h1>
+{% endblock %}

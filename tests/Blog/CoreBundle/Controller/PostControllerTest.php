@@ -58,8 +58,8 @@ class PostControllerTest extends WebTestCase
         $buttonCrawlerNode = $crawler->selectButton('Send');
 
         $form = $buttonCrawlerNode->form( array(
-            'blog_modelbundle_comment[authorName]' => 'A humble commenter',
-            'blog_modelbundle_comment[body]' => 'Hi! I am commenting about project'
+            'comment[authorName]' => 'A humble commenter',
+            'comment[body]' => 'Hi! I am commenting about project'
         ));
 
         $client->submit($form);

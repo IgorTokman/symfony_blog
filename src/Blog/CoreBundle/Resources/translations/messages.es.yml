@@ -16,6 +16,7 @@ post:
 comment:
   singular: Comentatios
   plural: Comentatios
+  write: Escribe comentatios
 
 author:
   title: Autor

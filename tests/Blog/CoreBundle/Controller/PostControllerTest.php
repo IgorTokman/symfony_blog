@@ -37,5 +37,8 @@ class PostControllerTest extends WebTestCase
             "The response was not successfulllllllllll");
 
         $this->assertEquals($post->getTitle(), $crawler->filter('h1')->text(), 'Invalid post title');
+
+        $this->assertGreaterThanOrEqual(1, $crawler->filter('article.comment')->count(),
+                    'There should be at least 1 post');
     }
 }

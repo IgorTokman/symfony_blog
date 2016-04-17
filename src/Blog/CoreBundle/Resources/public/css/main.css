@@ -44,6 +44,16 @@ article header{
     padding-left: 0;
 }
 
+
+article.post{
+    margin-bottom: 50px;
+
+}
+
+article.comment p{
+    margin-top: 0;
+}
+
 aside{
     float: right;
     width: 30%;

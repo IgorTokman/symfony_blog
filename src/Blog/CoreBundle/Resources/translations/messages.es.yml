@@ -1,8 +1,9 @@
-home: Inicio
+home:
+    Inicio
 
-by: por
-read.more: Leer mas
-author: Autor
+  on: en
+  by: por
+  read.more: Leer mas
 
 post:
   plural: Posts
@@ -11,5 +12,10 @@ post:
   by: Posts por
   by.author: Posts por %name%
 
+comment:
+  plural: Comentatios
+
 author:
-    empty.posts: Este autor no he escrito ning post toadavia
+  title: Autor
+  empty.posts: Este autor no he escrito ning post toadavia
+

@@ -1,6 +1,6 @@
 <?php
 
-use Blog\ModelBundle\DataFixtures\ORM;
+namespace Blog\ModelBundle\DataFixtures\ORM;
 
 use Blog\ModelBundle\Entity\Author;
 use Blog\ModelBundle\Entity\Post;

@@ -171,4 +171,38 @@ class Post extends Timestampable
     {
         return $this->slug;
     }
+
+    /**
+     * Add comment
+     *
+     * @param Comment $comment
+     *
+     * @return Post
+     */
+    public function addComment(\Blog\ModelBundle\Entity\Comment $comment)
+    {
+        $this->comments[] = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Remove comment
+     *
+     * @param Comment $comment
+     */
+    public function removeComment(Comment $comment)
+    {
+        $this->comments->removeElement($comment);
+    }
+
+    /**
+     * Get comments
+     *
+     * @return Collection
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
 }

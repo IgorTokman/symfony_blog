@@ -2,9 +2,12 @@
 
 namespace Blog\CoreBundle\Controller;
 
+use Blog\ModelBundle\Form\CommentType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\BrowserKit\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
@@ -49,8 +52,27 @@ class PostController extends Controller
         if($post === null)
             throw $this->createNotFoundException("Post was not found");
 
+        $form = $this->createForm(CommentType::class);
+
         return array(
-            'post' => $post
+            'post' => $post,
+            'form' => $form->createView()
         );
+    }
+
+    /**
+     * Create comment
+     *
+     * @param Request $request
+     * @param $slug
+     *
+     * @Route("/{slug}/create-comment")
+     * @Method("Post")
+     * @Template("CoreBundle:Post:show.html.twig")
+     *
+     * @return array
+     */
+    public function createCommentAction(Request $request, $slug){
+        return array();
     }
 }

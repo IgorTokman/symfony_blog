@@ -1,9 +1,10 @@
-home:
-    Inicio
+home: Inicio
 
-  on: en
-  by: por
-  read.more: Leer mas
+on: en
+by: por
+read.more: Leer mas
+name: Nombre
+send: Enviar
 
 post:
   plural: Posts
@@ -13,6 +14,7 @@ post:
   by.author: Posts por %name%
 
 comment:
+  singular: Comentatios
   plural: Comentatios
 
 author:

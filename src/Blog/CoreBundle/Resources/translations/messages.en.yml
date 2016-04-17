@@ -9,3 +9,7 @@ post:
   plural: Posts
   latests: Latest posts
   on: Posted on
+  by: Posts by
+  by.author: Posts by %name%
+
+author.empty.posts: This author did not write any post yet

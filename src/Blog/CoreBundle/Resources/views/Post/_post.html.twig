@@ -1,0 +1,18 @@
+<article>
+    <header>
+        <h2><a href="{{ path('blog_core_post_show', {slug: post.slug} ) }}">{{ post.title }}</a></h2>
+        <p>
+            {{ 'post.on' | trans }}
+            <time datatime="">{{ post.createdAt | date('c') }}</time>
+            {{ 'by ' | trans }}<a href="{{ path('blog_core_author_show', {slug: post.author.slug}) }}">{{ post.author.name }}</a>
+          &raquo; <a href="{{ path('blog_core_post_show', {slug: post.slug}) }}#comments">
+                {% set count = post.comments | length %}
+                {{ 'post.comments' | transchoice(count) }}
+            </a>
+        </p>
+    </header>
+    <p>
+        {{ post.body }} &#8212;
+        <a href="{{ path('blog_core_post_show', {slug: post.slug} ) }}">{{ 'read.more' |trans }} &raquo;</a>
+    </p>
+</article>

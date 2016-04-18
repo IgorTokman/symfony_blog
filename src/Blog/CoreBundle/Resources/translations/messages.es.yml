@@ -1,0 +1,24 @@
+home: Inicio
+
+on: en
+by: por
+read.more: Leer mas
+name: Nombre
+send: Enviar
+
+post:
+  plural: Posts
+  latests: Untio posts
+  on: Publicado
+  by: Posts por
+  by.author: Posts por %name%
+
+comment:
+  singular: Comentatios
+  plural: Comentatios
+  write: Escribe comentatios
+
+author:
+  title: Autor
+  empty.posts: Este autor no he escrito ning post toadavia
+
